@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4a3428">
+<meta name="description" content="Mahmud Melivoyev, Toshkent, O'zbekiston. Shaxsiy CV va portfolio. Personal CV and portfolio.">
+<title>Mahmud Melivoyev — Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { cocoa: '#4a3428', cream: '#f7f1e8', sand: '#efe4d3', gold: '#c8943f', ink: '#2b1f18' },
+    fontFamily: { sans: ['Inter','system-ui','-apple-system','"Segoe UI"','Roboto','sans-serif'] }
+  } } };
+</script>
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .lift { transition: transform .35s ease, box-shadow .35s ease; }
+  .lift:hover { transform: translateY(-5px); box-shadow: 0 18px 40px -18px rgba(74,52,40,.45); }
+  .bob { animation: bob 3s ease-in-out infinite; }
+  @keyframes bob { 50% { transform: translateY(-8px); } }
+  @media (prefers-reduced-motion: reduce) { html{scroll-behavior:auto} .reveal{opacity:1;transform:none;transition:none} .bob{animation:none} }
+</style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased">
+
+<!-- Top bar -->
+<header class="sticky top-0 z-40 bg-cocoa text-cream/90 shadow-md">
+  <nav class="mx-auto max-w-6xl px-5 h-14 flex items-center justify-between" aria-label="Asosiy">
+    <a href="#top" class="font-bold tracking-tight">Mahmud<span class="text-gold">.</span>M</a>
+    <ul class="hidden md:flex gap-6 text-sm">
+      <li><a class="hover:text-gold transition" href="#about">Men haqimda</a></li>
+      <li><a class="hover:text-gold transition" href="#journey">Yo'lim</a></li>
+      <li><a class="hover:text-gold transition" href="#sport">Sport</a></li>
+      <li><a class="hover:text-gold transition" href="#exercises">Mashqlar</a></li>
+      <li><a class="hover:text-gold transition" href="#courses">Kurslar</a></li>
+      <li><a class="hover:text-gold transition" href="#skills">Ko'nikmalar</a></li>
+      <li><a class="hover:text-gold transition" href="#contact">Aloqa</a></li>
+    </ul>
+    <a href="#contact" class="md:hidden text-sm font-semibold text-gold">Aloqa</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-cocoa text-cream">
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gold/20 blur-3xl"></div>
+    <div class="mx-auto max-w-6xl px-5 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <p class="text-gold font-semibold tracking-wide">Ambitious Mind · Strong Discipline</p>
+        <h1 class="mt-3 text-4xl sm:text-6xl font-extrabold leading-tight">Salom, men Mahmud.<br><span class="text-gold">Hello, I'm Mahmud.</span></h1>
+        <p class="mt-6 text-lg text-cream/80 max-w-xl">Texnologiya, ta'lim, sport, tillar va doimiy shaxsiy o'sish bilan qiziqadigan, intilishli yosh inson.</p>
+        <p class="mt-3 text-cream/60 max-w-xl">A motivated young individual passionate about technology, education, sports, languages and continuous personal growth.</p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#about" class="lift rounded-full bg-gold text-ink font-semibold px-6 py-3">Profilimni ko'rish · Explore My Profile</a>
+          <a href="#contact" class="lift rounded-full border border-cream/30 px-6 py-3 font-semibold hover:bg-cream/10">Bog'lanish · Contact</a>
+        </div>
+        <p class="mt-6 inline-block rounded-full bg-gold/20 text-gold px-4 py-1.5 text-sm font-semibold">Shaxsiy fitnes trener · Personal fitness trainer</p>
+        <p class="mt-4 text-sm text-cream/60">📍 Toshkent, O'zbekiston · Tashkent, Uzbekistan</p>
+      </div>
+
+      <!-- SVG portrait illustration (drawn for this page) -->
+      <div class="reveal flex justify-center">
+        <div class="bob relative w-72 sm:w-80">
+          <svg viewBox="0 0 320 380" role="img" aria-label="Mahmud Melivoyev portrait illustration" class="w-full h-auto drop-shadow-2xl">
+            <defs>
+              <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#c8943f"/><stop offset="1" stop-color="#8a5a33"/>
+              </linearGradient>
+              <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#e2b48a"/><stop offset="1" stop-color="#cf9a6e"/>
+              </linearGradient>
+            </defs>
+            <rect width="320" height="380" rx="28" fill="url(#bg)"/>
+            <circle cx="250" cy="70" r="60" fill="#f7f1e8" opacity=".12"/>
+            <!-- shoulders / jacket -->
+            <path d="M40 380 C40 290 90 262 160 262 C230 262 280 290 280 380 Z" fill="#2b1f18"/>
+            <!-- shirt V -->
+            <path d="M130 268 L160 330 L190 268 Z" fill="#f7f1e8"/>
+            <path d="M160 330 L152 380 M160 330 L168 380" stroke="#4a3428" stroke-width="2" opacity=".5"/>
+            <!-- neck -->
+            <rect x="142" y="222" width="36" height="50" rx="14" fill="#cf9a6e"/>
+            <!-- head -->
+            <ellipse cx="160" cy="165" rx="62" ry="72" fill="url(#skin)"/>
+            <!-- ears -->
+            <ellipse cx="97" cy="172" rx="10" ry="16" fill="#d6a275"/>
+            <ellipse cx="223" cy="172" rx="10" ry="16" fill="#d6a275"/>
+            <!-- hair -->
+            <path d="M96 150 C92 92 128 64 162 64 C200 64 230 92 224 150 C214 118 190 104 160 104 C130 104 108 120 96 150 Z" fill="#2b1f18"/>
+            <path d="M118 96 C140 84 186 84 210 98" stroke="#4a3428" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <!-- brows -->
+            <path d="M118 146 Q132 138 146 146" stroke="#2b1f18" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M174 146 Q188 138 202 146" stroke="#2b1f18" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <!-- eyes -->
+            <ellipse cx="132" cy="166" rx="6" ry="5" fill="#2b1f18"/>
+            <ellipse cx="188" cy="166" rx="6" ry="5" fill="#2b1f18"/>
+            <circle cx="134" cy="164" r="1.6" fill="#f7f1e8"/>
+            <circle cx="190" cy="164" r="1.6" fill="#f7f1e8"/>
+            <!-- nose -->
+            <path d="M160 170 Q156 192 164 198" stroke="#b97f55" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- smile -->
+            <path d="M136 214 Q160 232 184 214" stroke="#7a3f2a" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <!-- light stubble -->
+            <path d="M120 222 Q160 250 200 222" stroke="#2b1f18" stroke-width="10" fill="none" opacity=".12" stroke-linecap="round"/>
+          </svg>
+          <span class="absolute -bottom-4 -left-4 rounded-2xl bg-cream text-cocoa px-4 py-2 text-sm font-bold shadow-xl">30 🥇 medal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-sand py-12">
+    <div class="mx-auto max-w-6xl px-5 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="reveal lift rounded-2xl bg-cream p-6 text-center"><p class="text-4xl font-extrabold text-cocoa" data-count="30">0</p><p class="mt-1 text-sm text-cocoa/70">Kikboksing medali · Kickboxing medals</p></div>
+      <div class="reveal lift rounded-2xl bg-cream p-6 text-center"><p class="text-4xl font-extrabold text-cocoa">B2</p><p class="mt-1 text-sm text-cocoa/70">CEFR ingliz tili · English</p></div>
+      <div class="reveal lift rounded-2xl bg-cream p-6 text-center"><p class="text-4xl font-extrabold text-cocoa" data-count="3">0</p><p class="mt-1 text-sm text-cocoa/70">Til · Languages</p></div>
+      <div class="reveal lift rounded-2xl bg-cream p-6 text-center"><p class="text-4xl font-extrabold text-cocoa">∞</p><p class="mt-1 text-sm text-cocoa/70">O'rganish · Learning</p></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-6xl px-5 py-20 scroll-mt-20">
+    <div class="reveal max-w-3xl">
+      <p class="text-gold font-semibold">Men haqimda · About me</p>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-cocoa">Intilish va intizom</h2>
+      <p class="mt-5 text-lg leading-relaxed">Men Toshkentdan bo'lgan, maqsadga intilgan va intizomli yosh insonman. Doimiy o'rganish, mehnat va o'zimni yaxshilashga ishonaman.</p>
+      <p class="mt-3 text-ink/70 leading-relaxed">I am an ambitious, disciplined and goal-oriented individual from Tashkent. I believe in continuous learning, hard work and self-improvement.</p>
+    </div>
+  </section>
+
+  <!-- Journey -->
+  <section id="journey" class="bg-cocoa text-cream py-20 scroll-mt-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="reveal">
+        <p class="text-gold font-semibold">Mening yo'lim · My path</p>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold">Qadamma-qadam</h2>
+      </div>
+      <ol class="mt-12 grid md:grid-cols-4 gap-5">
+        <li class="reveal lift rounded-2xl bg-white/5 border border-white/10 p-6"><span class="text-gold text-3xl font-black">01</span><h3 class="mt-3 font-bold text-lg">O'qish</h3><p class="mt-2 text-sm text-cream/70">Ta'lim: o'rta maktab bitiruvchisi · High school graduate</p></li>
+        <li class="reveal lift rounded-2xl bg-white/5 border border-white/10 p-6"><span class="text-gold text-3xl font-black">02</span><h3 class="mt-3 font-bold text-lg">Tillar</h3><p class="mt-2 text-sm text-cream/70">Ingliz tili CEFR B2 darajasida · English at CEFR B2</p></li>
+        <li class="reveal lift rounded-2xl bg-white/5 border border-white/10 p-6"><span class="text-gold text-3xl font-black">03</span><h3 class="mt-3 font-bold text-lg">Sport</h3><p class="mt-2 text-sm text-cream/70">Kikboksing bo'yicha 30 ta medal · 30 kickboxing medals</p></li>
+        <li class="reveal lift rounded-2xl bg-white/5 border border-white/10 p-6"><span class="text-gold text-3xl font-black">04</span><h3 class="mt-3 font-bold text-lg">Texnologiya</h3><p class="mt-2 text-sm text-cream/70">Dasturlash va kiberxavfsizlik · Programming & cybersecurity</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Sport -->
+  <section id="sport" class="mx-auto max-w-6xl px-5 py-20 scroll-mt-20">
+    <div class="reveal">
+      <p class="text-gold font-semibold">Sport va intizom · Sport & discipline</p>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-cocoa">Ring va hayotda · In the ring and in life</h2>
+    </div>
+    <div class="mt-10 grid md:grid-cols-3 gap-5">
+      <div class="reveal lift rounded-3xl bg-white p-7 shadow-sm"><p class="text-5xl font-black text-cocoa">30</p><h3 class="mt-3 font-bold">Kikboksing medallari</h3><p class="mt-2 text-sm text-ink/70">Raqobatbardosh kikboksing mashg'ulotlari natijasi.</p></div>
+      <div class="reveal lift rounded-3xl bg-white p-7 shadow-sm"><p class="text-5xl font-black text-cocoa">💪</p><h3 class="mt-3 font-bold">Kuch va fitnes</h3><p class="mt-2 text-sm text-ink/70">Muntazam kuch mashqlari va chidamlilik.</p></div>
+      <div class="reveal lift rounded-3xl bg-white p-7 shadow-sm"><p class="text-5xl font-black text-cocoa">🎯</p><h3 class="mt-3 font-bold">Qat'iyat</h3><p class="mt-2 text-sm text-ink/70">Qiyin kunlarda ham maqsad sari davom etish.</p></div>
+    </div>
+  </section>
+
+  <!-- Exercises -->
+  <section id="exercises" class="mx-auto max-w-6xl px-5 py-20 scroll-mt-20">
+    <div class="reveal max-w-3xl">
+      <p class="text-gold font-semibold">Mashqlarni o'rganish · Learn the exercises</p>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-cocoa">Fitnes asoslari · Fitness basics</h2>
+      <p class="mt-3 text-ink/70 leading-relaxed">Har bir mashqni to'g'ri texnika bilan, xavfsiz va bosqichma-bosqich o'rganing. Learn each movement with proper form, safely and step by step.</p>
+    </div>
+    <div class="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-5">
+      <article class="reveal lift rounded-3xl bg-white p-6 shadow-sm">
+        <div class="h-36 rounded-2xl bg-gradient-to-br from-sand to-cream flex items-center justify-center text-6xl" aria-hidden="true">🏋️</div>
+        <h3 class="mt-4 font-bold">Cho'qqi · Squat</h3><p class="mt-1 text-sm text-ink/70">Oyoq va son mushaklari kuchi.</p>
+      </article>
+      <article class="reveal lift rounded-3xl bg-white p-6 shadow-sm">
+        <div class="h-36 rounded-2xl bg-gradient-to-br from-sand to-cream flex items-center justify-center text-6xl" aria-hidden="true">💪</div>
+        <h3 class="mt-4 font-bold">Shnur · Push-up</h3><p class="mt-1 text-sm text-ink/70">Ko'krak, yelka va triceps.</p>
+      </article>
+      <article class="reveal lift rounded-3xl bg-white p-6 shadow-sm">
+        <div class="h-36 rounded-2xl bg-gradient-to-br from-sand to-cream flex items-center justify-center text-6xl" aria-hidden="true">🦵</div>
+        <h3 class="mt-4 font-bold">Olg'a qadam · Lunge</h3><p class="mt-1 text-sm text-ink/70">Muvozanat va oyoq kuchi.</p>
+      </article>
+      <article class="reveal lift rounded-3xl bg-white p-6 shadow-sm">
+        <div class="h-36 rounded-2xl bg-gradient-to-br from-sand to-cream flex items-center justify-center text-6xl" aria-hidden="true">🧘</div>
+        <h3 class="mt-4 font-bold">Taxta · Plank</h3><p class="mt-1 text-sm text-ink/70">Qorin va o'zak mushaklari.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Kickboxing courses -->
+  <section id="courses" class="bg-cocoa text-cream py-20 scroll-mt-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="reveal max-w-3xl">
+        <p class="text-gold font-semibold">Kikboks kurslari · Kickboxing courses</p>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold">Boshlang'ichdan musobaqagacha</h2>
+        <p class="mt-3 text-cream/70 leading-relaxed">Yo'nalishni tanlang. Narx, jadval va guruhlar haqida ma'lumot uchun yozing. Choose your track; message me for prices and schedules.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-5">
+        <article class="reveal lift rounded-3xl bg-white/5 border border-white/10 p-7">
+          <div class="h-36 rounded-2xl bg-gradient-to-br from-gold to-[#8a5a33] flex items-center justify-center text-6xl" aria-hidden="true">🥋</div>
+          <h3 class="mt-4 text-xl font-bold">Boshlang'ich · Beginner</h3>
+          <p class="mt-2 text-sm text-cream/70">Stoyka, himoya, zarba asoslari va oyoq harakati.</p>
+          <a href="mailto:mahmudmelivoyev608@gmail.com?subject=Boshlang%27ich%20kikboks%20kursi" class="mt-6 inline-block rounded-full bg-gold text-ink px-5 py-2.5 text-sm font-semibold">Ma'lumot olish · Get details</a>
+        </article>
+        <article class="reveal lift rounded-3xl bg-white/5 border border-white/10 p-7">
+          <div class="h-36 rounded-2xl bg-gradient-to-br from-gold to-[#8a5a33] flex items-center justify-center text-6xl" aria-hidden="true">🥊</div>
+          <h3 class="mt-4 text-xl font-bold">O'rta daraja · Intermediate</h3>
+          <p class="mt-2 text-sm text-cream/70">Kombinatsiyalar, tezlik, kuch va sparring asoslari.</p>
+          <a href="mailto:mahmudmelivoyev608@gmail.com?subject=Orta%20daraja%20kikboks%20kursi" class="mt-6 inline-block rounded-full bg-gold text-ink px-5 py-2.5 text-sm font-semibold">Ma'lumot olish · Get details</a>
+        </article>
+        <article class="reveal lift rounded-3xl bg-white/5 border border-white/10 p-7">
+          <div class="h-36 rounded-2xl bg-gradient-to-br from-gold to-[#8a5a33] flex items-center justify-center text-6xl" aria-hidden="true">🏆</div>
+          <h3 class="mt-4 text-xl font-bold">Musobaqaga tayyorgarlik · Competition prep</h3>
+          <p class="mt-2 text-sm text-cream/70">Taktika, intizom, jismoniy tayyorgarlik va sparring.</p>
+          <a href="mailto:mahmudmelivoyev608@gmail.com?subject=Musobaqaga%20tayyorgarlik" class="mt-6 inline-block rounded-full bg-gold text-ink px-5 py-2.5 text-sm font-semibold">Ma'lumot olish · Get details</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & languages -->
+  <section id="skills" class="bg-sand py-20 scroll-mt-20">
+    <div class="mx-auto max-w-6xl px-5 grid md:grid-cols-2 gap-12">
+      <div class="reveal">
+        <p class="text-gold font-semibold">Ko'nikmalar · Skills</p>
+        <div class="mt-6 flex flex-wrap gap-2.5">
+          <span class="rounded-full bg-cream px-4 py-2 text-sm font-medium">Kommunikatsiya · Communication</span>
+          <span class="rounded-full bg-cream px-4 py-2 text-sm font-medium">Tanqidiy fikrlash · Critical thinking</span>
+          <span class="rounded-full bg-cream px-4 py-2 text-sm font-medium">Muammo yechish · Problem solving</span>
+          <span class="rounded-full bg-cream px-4 py-2 text-sm font-medium">Jamoaviy ish · Teamwork</span>
+          <span class="rounded-full bg-cream px-4 py-2 text-sm font-medium">Vaqt boshqaruvi · Time management</span>
+          <span class="rounded-full bg-cream px-4 py-2 text-sm font-medium">O'z-o'zini o'rganish · Self-learning</span>
+          <span class="rounded-full bg-cream px-4 py-2 text-sm font-medium">Kompyuter savodxonligi · Computer literacy</span>
+          <span class="rounded-full bg-cream px-4 py-2 text-sm font-medium">Moslashuvchanlik · Adaptability</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="text-gold font-semibold">Tillar · Languages</p>
+        <ul class="mt-6 space-y-5">
+          <li><div class="flex justify-between text-sm font-semibold"><span>O'zbek · Uzbek</span><span>Ona tili · Native</span></div><div class="mt-2 h-2.5 rounded-full bg-cream"><div class="h-full w-full rounded-full bg-cocoa"></div></div></li>
+          <li><div class="flex justify-between text-sm font-semibold"><span>Ingliz · English</span><span>CEFR B2</span></div><div class="mt-2 h-2.5 rounded-full bg-cream"><div class="h-full w-3/4 rounded-full bg-gold"></div></div></li>
+          <li><div class="flex justify-between text-sm font-semibold"><span>Rus · Russian</span><span>Basic / Intermediate</span></div><div class="mt-2 h-2.5 rounded-full bg-cream"><div class="h-full w-1/2 rounded-full bg-cocoa/60"></div></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests -->
+  <section class="mx-auto max-w-6xl px-5 py-20">
+    <div class="reveal"><p class="text-gold font-semibold">Qiziqishlar · Interests</p><h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-cocoa">Nimalar meni qiziqtiradi</h2></div>
+    <div class="mt-10 flex flex-wrap gap-3">
+      <span class="reveal rounded-full border border-cocoa/20 px-4 py-2">💻 Axborot texnologiyalari</span>
+      <span class="reveal rounded-full border border-cocoa/20 px-4 py-2">⚙️ Backend dasturlash</span>
+      <span class="reveal rounded-full border border-cocoa/20 px-4 py-2">🛡️ Kiberxavfsizlik</span>
+      <span class="reveal rounded-full border border-cocoa/20 px-4 py-2">🧠 Sun'iy intellekt</span>
+      <span class="reveal rounded-full border border-cocoa/20 px-4 py-2">🌍 Chet tillari</span>
+      <span class="reveal rounded-full border border-cocoa/20 px-4 py-2">🥋 Kikboksing</span>
+      <span class="reveal rounded-full border border-cocoa/20 px-4 py-2">🌱 Shaxsiy rivojlanish</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-cocoa text-cream py-20 scroll-mt-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="reveal"><p class="text-gold font-semibold">Aloqa · Contact</p><h2 class="mt-2 text-3xl sm:text-4xl font-extrabold">Keling, gaplashaylik</h2></div>
+      <div class="mt-10 grid md:grid-cols-2 gap-5">
+        <a href="mailto:mahmudmelivoyev608@gmail.com" class="reveal lift block rounded-2xl bg-white/5 border border-white/10 p-6">
+          <p class="text-sm text-cream/60">Email</p><p class="mt-1 font-semibold break-all">mahmudmelivoyev608@gmail.com</p>
+        </a>
+        <a href="tel:+998880302332" class="reveal lift block rounded-2xl bg-white/5 border border-white/10 p-6">
+          <p class="text-sm text-cream/60">Telefon · Phone</p><p class="mt-1 font-semibold">+998-88-030-2332</p>
+        </a>
+      </div>
+      <p class="mt-6 text-cream/60 text-sm">LinkedIn va GitHub havolalari qo'shilganda shu yerda ko'rinadi · LinkedIn and GitHub will appear here when added.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-ink text-cream/70 py-10">
+  <div class="mx-auto max-w-6xl px-5 flex flex-col md:flex-row md:justify-between gap-3 text-sm">
+    <p class="font-semibold text-cream">Designed with purpose. Built for the future.</p>
+    <p>© <span id="y"></span> Mahmud Melivoyev · <a href="#top" class="hover:text-gold">↑ Yuqoriga · Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Count-up numbers
+  const counters = document.querySelectorAll('[data-count]');
+  const cio = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, to = +el.dataset.count, dur = 1400, t0 = performance.now();
+      const step = t => {
+        const p = Math.min((t - t0) / dur, 1);
+        el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+      cio.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => cio.observe(c));
+</script>
+</body>
+</html>
